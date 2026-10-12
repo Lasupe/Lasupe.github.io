@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Lasupe Xiong's Computer Science ePortfolio showcasing software engineering, algorithms, databases, and cybersecurity.">
+  <meta name="description" content="Lasupe Xiong's Computer Science ePortfolio featuring software engineering, algorithms, databases, and cybersecurity.">
   <title>Lasupe Xiong | Computer Science ePortfolio</title>
 
   <style>
@@ -110,6 +111,40 @@
 
     a {
       color: #165c99;
+    }
+
+    .button {
+      display: inline-block;
+      background: var(--blue);
+      color: white;
+      padding: 10px 18px;
+      margin: 8px 8px 8px 0;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .button:hover {
+      background: #174c7e;
+      text-decoration: none;
+    }
+
+    .video {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+
+    .video iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
     }
 
     footer {
@@ -292,9 +327,22 @@
         software and communicate technical decisions.
       </p>
 
-      <p>
-        Code review video link will be added here.
-      </p>
+      <a class="button"
+         href="https://youtu.be/mon1T_db7Fg"
+         target="_blank"
+         rel="noopener noreferrer">
+        Watch My Code Review Video
+      </a>
+
+      <div class="video">
+        <iframe
+          src="https://www.youtube.com/embed/mon1T_db7Fg"
+          title="CS-499 Capstone Code Review"
+          loading="lazy"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+      </div>
     </section>
 
     <section id="software">
@@ -320,6 +368,14 @@
         <span class="tag">REST API</span>
         <span class="tag">Security</span>
         <span class="tag">Testing</span>
+
+        <p>
+          <a class="button"
+             href="CS%20499%203-2%20Milestone%20Two.docx"
+             download>
+            Download Enhancement Narrative
+          </a>
+        </p>
       </div>
     </section>
 
@@ -346,6 +402,14 @@
         <span class="tag">AVL Trees</span>
         <span class="tag">Algorithms</span>
         <span class="tag">Validation</span>
+
+        <p>
+          <a class="button"
+             href="CS%20499%204-2%20Milestone%20Three.docx"
+             download>
+            Download Enhancement Narrative
+          </a>
+        </p>
       </div>
     </section>
 
@@ -373,6 +437,14 @@
         <span class="tag">MongoDB</span>
         <span class="tag">CRUD</span>
         <span class="tag">Database Security</span>
+
+        <p>
+          <a class="button"
+             href="CS%20499%205-2%20Milestone%20Four.docx"
+             download>
+            Download Enhancement Narrative
+          </a>
+        </p>
       </div>
     </section>
 
