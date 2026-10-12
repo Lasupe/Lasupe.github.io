@@ -1,0 +1,243 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Computer Science ePortfolio showcasing software engineering, algorithms, databases, and cybersecurity.">
+  <title>Lasupe Xiong | Computer Science ePortfolio</title>
+  <style>
+    :root {
+      --navy: #14263d;
+      --blue: #2363a0;
+      --light: #f3f6fa;
+      --text: #253448;
+      --border: #dce5ee;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+      color: var(--text);
+      background: var(--light);
+    }
+
+    header {
+      background: var(--navy);
+      color: white;
+      text-align: center;
+      padding: 65px 20px;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0 0 10px;
+    }
+
+    header p {
+      max-width: 700px;
+      margin: 0 auto;
+      color: #dbe7f4;
+    }
+
+    nav {
+      background: #1b3b60;
+      padding: 14px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover, a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 35px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 30px;
+      margin-bottom: 25px;
+    }
+
+    h2 { color: var(--navy); margin-top: 0; }
+    h3 { color: var(--blue); }
+
+    .tag {
+      display: inline-block;
+      padding: 5px 12px;
+      background: #e8f1fa;
+      color: #164978;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      margin: 4px 4px 4px 0;
+    }
+
+    .project {
+      border-left: 4px solid var(--blue);
+      padding-left: 20px;
+      margin-top: 25px;
+    }
+
+    a { color: #165c99; }
+
+    footer {
+      text-align: center;
+      background: var(--navy);
+      color: white;
+      padding: 25px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.9rem; }
+      section { padding: 20px; }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Lasupe Xiong</h1>
+    <p>Computer Science ePortfolio</p>
+    <p>Software Development | Cybersecurity | Information Technology</p>
+  </header>
+
+  <nav aria-label="Main navigation">
+    <a href="#about">Self-Assessment</a>
+    <a href="#review">Code Review</a>
+    <a href="#software">Software Engineering</a>
+    <a href="#algorithms">Algorithms</a>
+    <a href="#databases">Databases</a>
+  </nav>
+
+  <main>
+    <section id="about">
+      <h2>Professional Self-Assessment</h2>
+      <p>
+        I am a Computer Science student at Southern New Hampshire
+        University with interests in software development,
+        cybersecurity, and information technology. Throughout my
+        academic program, I have gained experience designing,
+        implementing, testing, and improving software applications
+        using a variety of programming languages and technologies.
+      </p>
+      <p>
+        My capstone ePortfolio demonstrates my growth in software
+        engineering, algorithms and data structures, database
+        management, technical communication, and secure software
+        development. These projects illustrate how I apply
+        computer science principles to solve practical problems
+        while considering maintainability, performance, and security.
+      </p>
+      <p>
+        My complete professional self-assessment will appear
+        here as part of my final portfolio.
+      </p>
+    </section>
+
+    <section id="review">
+      <h2>Code Review</h2>
+      <p>
+        My CS-499 code review examines the original artifacts,
+        identifies areas for improvement, and explains the
+        enhancements planned for software engineering,
+        algorithms, and databases.
+      </p>
+      <p>
+        The video demonstrates my ability to analyze existing
+        software and communicate technical decisions.
+      </p>
+    </section>
+
+    <section id="software">
+      <h2>Software Design and Engineering</h2>
+      <div class="project">
+        <h3>Travlr Getaways</h3>
+        <p>
+          Originally developed in CS-465, Travlr Getaways is a
+          full-stack travel application using MongoDB, Express,
+          Angular, and Node.js.
+        </p>
+        <p>
+          My enhancement strengthens authentication and
+          authorization, improves input validation and error
+          handling, and expands automated testing to support
+          a more secure and maintainable application.
+        </p>
+        <span class="tag">MEAN Stack</span>
+        <span class="tag">REST API</span>
+        <span class="tag">Security</span>
+        <span class="tag">Testing</span>
+      </div>
+    </section>
+
+    <section id="algorithms">
+      <h2>Algorithms and Data Structures</h2>
+      <div class="project">
+        <h3>Course Planner</h3>
+        <p>
+          Originally developed in CS-300, this C++ application
+          organizes and retrieves course information and
+          prerequisites.
+        </p>
+        <p>
+          My enhancement replaces the original binary search
+          tree with a self-balancing AVL tree and adds validation
+          for duplicate courses, missing prerequisites,
+          self-references, and prerequisite cycles.
+        </p>
+        <span class="tag">C++</span>
+        <span class="tag">AVL Trees</span>
+        <span class="tag">Algorithms</span>
+        <span class="tag">Validation</span>
+      </div>
+    </section>
+
+    <section id="databases">
+      <h2>Databases</h2>
+      <div class="project">
+        <h3>Grazioso Salvare Dashboard</h3>
+        <p>
+          Originally developed in CS-340, this Python dashboard
+          retrieves and visualizes animal shelter records
+          stored in MongoDB.
+        </p>
+        <p>
+          My enhancement improves database authentication,
+          input validation, safe CRUD operations, index
+          management, and query analysis. Automated testing
+          and local MongoDB integration testing help verify
+          the enhanced database functionality.
+        </p>
+        <span class="tag">Python</span>
+        <span class="tag">MongoDB</span>
+        <span class="tag">CRUD</span>
+        <span class="tag">Database Security</span>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Lasupe Xiong | CS-499 Computer Science Capstone</p>
+    <p>Southern New Hampshire University</p>
+  </footer>
+</body>
+</html>
