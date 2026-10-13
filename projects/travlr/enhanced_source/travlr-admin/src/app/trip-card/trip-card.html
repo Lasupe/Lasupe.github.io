@@ -1,0 +1,12 @@
+<div *ngIf="trip">
+  <h3>{{ trip.name }}</h3>
+  <p>Length: {{ trip.length }}</p>
+  <p>Price: {{ trip.perPerson }}</p>
+  <p>{{ trip.description }}</p>
+
+  <a [href]="'/edit/' + trip._id">Edit</a>
+  |
+  <button type="button" (click)="deleteTrip(trip._id)">Delete</button>
+
+  <hr>
+</div>

@@ -1,0 +1,17 @@
+<app-trip-add></app-trip-add>
+
+<hr>
+
+<h2>Trips</h2>
+
+<ng-container *ngIf="trips$ | async as trips; else loading">
+  <p>Total trips: {{ trips.length }}</p>
+
+  <div *ngFor="let trip of trips">
+    <app-trip-card [trip]="trip"></app-trip-card>
+  </div>
+</ng-container>
+
+<ng-template #loading>
+  <p>Loading trips...</p>
+</ng-template>
