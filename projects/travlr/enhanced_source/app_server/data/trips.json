@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Hawaii Adventure",
+    "length": "7 nights",
+    "price": 1200,
+    "description": "Enjoy beaches and sunshine.",
+    "image": "/images/reef1.jpg"
+  },
+  {
+    "name": "New York City Escape",
+    "length": "5 nights",
+    "price": 900,
+    "description": "Explore the city and famous landmarks.",
+    "image": "/images/reef2.jpg"
+  },
+  {
+    "name": "Mountain Retreat",
+    "length": "4 nights",
+    "price": 750,
+    "description": "Relax in a peaceful mountain setting.",
+    "image": "/images/reef3.jpg"
+  }
+]
