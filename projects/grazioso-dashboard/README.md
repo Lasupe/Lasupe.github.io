@@ -1,13 +1,12 @@
-# Grazioso Salvare Dashboard
-
-CS-499 Milestone Four: Databases
-
-This project enhances the original CS-340 Grazioso
-Salvare Dashboard using Python, Dash, and MongoDB.
-
-Enhancements include secure database authentication,
-input validation, improved CRUD operations, database
-indexing, and automated testing.
-
-The portfolio includes original source code,
-enhanced source code, and tests.
+CS 499 Milestone Four - Database Enhancement
+This folder begins the enhanced database layer for the Grazioso Salvare artifact.
+First enhancement
+MongoDB credentials come from environment variables.
+Authentication fails closed; there is no automatic no-auth fallback.
+Create/update data is validated.
+Update/delete require non-empty filters.
+Update operators are allowlisted.
+Rescue-profile indexes can be created from the application.
+`explain_query()` exposes MongoDB `executionStats` for performance evidence.
+The original uploaded `crud.py` and dashboard notebook are preserved under
+`original_source/`.
