@@ -1,0 +1,14 @@
+const express = require('express');
+const router = express.Router();
+const ctrlTrips = require('../controllers/trips');
+const ctrlAuth = require('../controllers/authentication');
+const { authenticate, requireAdmin } = require('../middleware/auth');
+const { validId } = require('../middleware/validation');
+router.get('/trips', ctrlTrips.tripsList);
+router.get('/trips/:tripId', validId, ctrlTrips.tripsFindById);
+router.post('/register', ctrlAuth.register);
+router.post('/login', ctrlAuth.login);
+router.post('/trips', authenticate, requireAdmin, ctrlTrips.tripAdd);
+router.put('/trips/:tripId', authenticate, requireAdmin, validId, ctrlTrips.tripUpdateOne);
+router.delete('/trips/:tripId', authenticate, requireAdmin, validId, ctrlTrips.tripDeleteOne);
+module.exports = router;
