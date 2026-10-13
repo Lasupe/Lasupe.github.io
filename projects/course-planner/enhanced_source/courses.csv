@@ -1,0 +1,6 @@
+CS101,Introduction to Programming
+MATH101,College Algebra
+CS201,Data Structures,CS101
+CS301,Algorithms,CS201,MATH101
+CS401,Advanced Algorithms,CS301
+CS450,Software Engineering,CS201
